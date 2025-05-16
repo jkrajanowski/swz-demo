@@ -27,16 +27,11 @@ export default function Home() {
       {/* --- input area --- */}
       <textarea
         className="w-full h-40 p-3 rounded border"
-        placeholder="Wklej zdanie z SWZ… (max 350 znaków)"
+        placeholder="Wklej zdanie z SWZ… "
         value={src}
         onChange={(e) => setSrc(e.target.value)}
-        maxLength={350}
       />
 
-      {/* helper text + live counter */}
-      <div className="text-sm text-gray-500">
-        {src.length}/350 znaków&nbsp;•&nbsp;Pole przyjmuje maksymalnie 350 znaków
-      </div>
 
       {/* --- action button --- */}
       <button
